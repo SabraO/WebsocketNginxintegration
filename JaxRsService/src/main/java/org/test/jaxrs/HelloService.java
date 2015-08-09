@@ -24,7 +24,7 @@ public class HelloService {
     @Path("/{message}")
     public void connectToWSServer(@PathParam("message") final String message) throws URISyntaxException, IOException, DeploymentException, InterruptedException {
 
-        String endPoint = "ws://localhost:9765/WebSocketServer/echo";
+        String endPoint = "ws://localhost:9763/WebSocketServer/echo";
 
         messageLatch = new CountDownLatch(1);
 
